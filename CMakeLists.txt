@@ -31,13 +31,13 @@ catkin_package()
 
 include_directories(include ${catkin_INCLUDE_DIRS} ${OpenCV_INCLUDE_DIRS} ${Eigen_INCLUDE_DIRS} )
 
-add_executable(ros_erle_teleoperation ${QT_SOURCES} ${QT_RESOURCES_CPP} ${QT_FORMS_HPP} ${QT_MOC_HPP})
+add_executable(ros_erle_computervision_teleoperation ${QT_SOURCES} ${QT_RESOURCES_CPP} ${QT_FORMS_HPP} ${QT_MOC_HPP})
 message(${catkin_LIBRARIES})
-target_link_libraries(ros_erle_teleoperation ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES}  ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES})
-add_dependencies(ros_erle_teleoperation ros_erle_teleoperation)
+target_link_libraries(ros_erle_computervision_teleoperation ${catkin_LIBRARIES} ${OpenCV_LIBS} ${OpenCV_LIBRARIES} ${Eigen_LIBRARIES}  ${QT_LIBRARIES} ${ROS_LIBRARIES} ${catkin_LIBRARIES})
+add_dependencies(ros_erle_computervision_teleoperation ros_erle_computervision_teleoperation)
 
 install(
-	TARGETS ros_erle_teleoperation
+	TARGETS ros_erle_computervision_teleoperation
 	ARCHIVE DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 	LIBRARY DESTINATION ${CATKIN_PACKAGE_LIB_DESTINATION}
 	RUNTIME DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION})

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package>
-  <name>ros_erle_teleoperation</name>
+  <name>ros_erle_computervision_teleoperation</name>
   <version>0.0.0</version>
   <description>The ros_erle_teleoperation package</description>
 
